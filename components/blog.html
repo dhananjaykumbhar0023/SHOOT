@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProShoot</title>
+    <link rel="stylesheet" href="../shoot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="../image/camera.jpg" alt="ProShoot Photography" onerror="this.style.display='none'">
+      <span>RohDip</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="../shoot.html">Home</a></li>
+        <li><a href="../shoot.html#about">About</a></li>
+        <li><a href="../shoot.html#offers">Projects</a></li>
+        <li><a href="../shoot.html#pricing">Pages</a></li>
+        <li><a href="#" class="active">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-container">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="../shoot.html">Home</a></li>
+        <li><a href="../shoot.html#about">About</a></li>
+        <li><a href="../shoot.html#offers">Projects</a></li>
+        <li><a href="../shoot.html#pricing">Pages</a></li>
+        <li class="active"><a href="#" class="active">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- BANNER SECTION -->
+<section class="banner-section">
+  <!-- Video Background -->
+  <div class="banner-video-bg">
+    <video autoplay muted loop playsinline class="banner-video">
+      <source src="../image/pre2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="banner-video-overlay"></div>
+  </div>
+  
+  <div class="banner-container">
+    <div class="banner-content">
+      <div class="banner-text">  
+        <div class="banner-main">
+          <h1 class="banner-title">
+            BL<span class="highlight">O</span>G &<br>
+            ST<span class="highlight">O</span>RIES
+          </h1>
+          <p class="banner-description">
+            Discover the stories behind our photography, tips for perfect shots, and the latest trends in wedding and portrait photography
+          </p>
+          <button class="banner-btn">READ MORE</button>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+
+<!-- QR CODE SCAN SECTION -->
+<section class="qr-scan-section" id="qr-scan">
+    <div class="qr-scan-container">
+        <div class="qr-scan-card">
+            <!-- Left Side - Text Content -->
+            <div class="qr-content-left">
+                <div class="qr-card-header">
+                    <h2 class="couple-names">Suprita & Dhruv</h2>
+                    <div class="scan-instruction">
+                        <span class="scan-text">SCAN THE</span>
+                        <span class="qr-text">QR CODE</span>
+                    </div>
+                </div>
+                
+                <div class="qr-card-footer">
+                    <div class="sign-up-text">SIGN UP</div>
+                    <div class="upload-instruction">
+                        <p>Upload & Share Your Photos & Videos With Us</p>
+                        <p class="sub-instruction">Join Some To Your Professional Photos & Videos</p>
+                        <p class="sub-instruction">From Our Wedding</p>
+                    </div>
+                    <div class="qr-logo">
+                        <span class="qr-brand">RD</span>
+                        <span class="qr-powered">POWERED</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side - QR Code Carousel -->
+            <div class="qr-content-right">
+                <div class="qr-carousel-container">
+                    <!-- QR Code Container -->
+                    <div class="qr-code-container">
+                        <!-- First QR Code -->
+                        <div class="qr-slide active" id="qr-slide-1">
+                            <div class="phone-frame">
+                                <div class="qr-code-placeholder">
+                                    <img src="../image/qr1.png" alt="QR Code for Wedding Photo Upload" class="qr-code-image">
+                                </div>
+                                <div class="qr-caption-below">
+                                    <span class="qr-caption-text">RD Wedding Pictures</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Second QR Code -->
+                        <div class="qr-slide" id="qr-slide-2">
+                            <div class="phone-frame">
+                                <div class="qr-code-placeholder">
+                                    <img src="../image/qr2.png" alt="QR Code for Engagement Photo Upload" class="qr-code-image">
+                                </div>
+                                <div class="qr-caption-below">
+                                    <span class="qr-caption-text">RD Engagement Pictures</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Third QR Code -->
+                        <div class="qr-slide" id="qr-slide-3">
+                            <div class="phone-frame">
+                                <div class="qr-code-placeholder">
+                                    <img src="../image/q3.png" alt="QR Code for Pre-Wedding Photo Upload" class="qr-code-image">
+                                </div>
+                                <div class="qr-caption-below">
+                                    <span class="qr-caption-text">RD Pre-Wedding Pictures</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Fourth QR Code -->
+                        <div class="qr-slide" id="qr-slide-4">
+                            <div class="phone-frame">
+                                <div class="qr-code-placeholder">
+                                    <img src="../image/qr4.png" alt="QR Code for Reception Photo Upload" class="qr-code-image">
+                                </div>
+                                <div class="qr-caption-below">
+                                    <span class="qr-caption-text">RD Haldi Pictures</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Arrows Container at Bottom -->
+                    <div class="qr-arrows-container">
+                        <button class="qr-arrow qr-arrow-left" onclick="previousQR()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="qr-arrow qr-arrow-right" onclick="nextQR()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CART SECTION -->
+<section class="cart-section" id="cart" style="display: none;">
+    <div class="cart-container">
+        <div class="cart-content">
+            <!-- Left Side - Image Gallery Grid -->
+            <div class="cart-image-section">
+                <div class="cart-image-grid">
+                    <div class="grid-image-item">
+                        <img src="../image/wedding1.jpg" alt="Wedding Photography 1" class="grid-image">
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="../image/wedding2.webp" alt="Wedding Photography 2" class="grid-image">
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="../image/wedding3.jpg" alt="Wedding Photography 3" class="grid-image">
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="../image/e1.webp" alt="Engagement Photography 1" class="grid-image">
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="../image/e2.webp" alt="Engagement Photography 2" class="grid-image">
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="../image/e3.avif" alt="Engagement Photography 3" class="grid-image">
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="../image/e4.webp" alt="Engagement Photography 4" class="grid-image">
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="../image/weddding4.webp" alt="Wedding Photography 4" class="grid-image">
+                    </div>
+                </div>
+                <div class="cart-image-overlay">
+                    <h3>Premium Wedding Photography</h3>
+                    <p>Capture your special moments with our professional photography services</p>
+                </div>
+            </div>
+            
+            <!-- Right Side - Package Card -->
+            <div class="cart-package-section">
+                <div class="cart-header">
+                    <h2>Your Cart</h2>
+                    <button class="cart-close-btn" onclick="closeCart()">&times;</button>
+                </div>
+                
+                <!-- Package Card -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-emoji">💑❤️</div>
+                        <h3 class="package-title">Pre-Wedding Photoshoot</h3>
+                        <p class="package-subtitle">Best for couples & save-the-date</p>
+                    </div>
+                    
+                    <div class="package-features">
+                        <div class="feature-item">
+                            <span class="feature-emoji">📷</span>
+                            <span class="feature-text">Photos: 150–200 edited photos</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-emoji">🎥</span>
+                            <span class="feature-text">Video: Cinematic highlight video (2–3 min)</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-emoji">⏱️</span>
+                            <span class="feature-text">Duration: Half Day (4–5 hrs)</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-emoji">📍</span>
+                            <span class="feature-text">Location: 1–2 outdoor locations</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-emoji">🎨</span>
+                            <span class="feature-text">Editing: Premium color grading</span>
+                        </div>
+                    </div>
+                    
+                    <div class="package-pricing">
+                        <div class="original-price">Original Price: ₹25,000</div>
+                        <div class="offer-price">Offer Price: ₹14,999</div>
+                    </div>
+                    
+                    <div class="quantity-section">
+                        <label>Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" onclick="updateQuantity(-1)">-</button>
+                            <span class="qty-number" id="quantity">1</span>
+                            <button class="qty-btn plus" onclick="updateQuantity(1)">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-total">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">₹14,999</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Discount:</span>
+                            <span class="discount">-₹10,001</span>
+                        </div>
+                        <div class="total-row final-total">
+                            <span>Total:</span>
+                            <span id="finalTotal">₹14,999</span>
+                        </div>
+                    </div>
+                    
+                    <button class="book-now-btn" onclick="scrollToBookingForm()">
+                        👉 Book Now
+                    </button>
+                </div>
+                
+                <!-- Image Slider Section -->
+                <div class="image-slider-section">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider-track" id="sliderTrack">
+                                <div class="slide">
+                                    <img src="../image/wedding1.jpg" alt="Wedding Photography 1" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/wedding2.webp" alt="Wedding Photography 2" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/wedding3.jpg" alt="Wedding Photography 3" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/weddding4.webp" alt="Wedding Photography 4" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/e1.webp" alt="Engagement Photography 1" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/e2.webp" alt="Engagement Photography 2" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/e3.avif" alt="Engagement Photography 3" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/e4.webp" alt="Engagement Photography 4" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/e5.jpg" alt="Engagement Photography 5" class="slider-image">
+                                </div>
+                                <div class="slide">
+                                    <img src="../image/e6.jpg" alt="Engagement Photography 6" class="slider-image">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev-btn" onclick="moveSlider(-1)">❮</button>
+                        <button class="slider-btn next-btn" onclick="moveSlider(1)">❯</button>
+                    </div>
+                </div>
+
+                <!-- Additional Services -->
+                <div class="additional-services">
+                    <h4>Add Extra Services:</h4>
+                    <div class="service-item">
+                        <input type="checkbox" id="album" value="5000">
+                        <label for="album">Premium Photo Album (+₹5,000)</label>
+                    </div>
+                    <div class="service-item">
+                        <input type="checkbox" id="drone" value="3000">
+                        <label for="drone">Drone Photography (+₹3,000)</label>
+                    </div>
+                    <div class="service-item">
+                        <input type="checkbox" id="makeup" value="8000">
+                        <label for="makeup">Professional Makeup (+₹8,000)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section class="booking-section" id="booking">
+    <div class="booking-container">
+        <!-- Cart Notification Bar -->
+        <div class="cart-notification-bar">
+            <span class="cart-icon">📅</span>
+            <button class="view-cart-btn" onclick="showCart()">Booking</button>
+            <span class="cart-message">"Young Life Basic" has been added to your booking.</span>
+        </div>
+        
+        <!-- Login Notice -->
+        <div class="login-notice-bar">
+            <span class="info-icon">ℹ️</span>
+            <span class="notice-text">Please log in or create an account to secure your booking and complete your purchase.</span>
+        </div>
+        
+        <!-- Auth Card -->
+        <div class="auth-card">
+            <!-- Auth Tabs -->
+            <div class="auth-tabs">
+                <button class="auth-tab active" onclick="switchAuthTab('login')">LOGIN</button>
+                <button class="auth-tab" onclick="switchAuthTab('registration')">REGISTRATION</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form login-form active" onsubmit="return false;">
+                <div class="login-form-content">
+                    <div class="form-group">
+                        <div class="input-with-icon">
+                            <span class="input-icon"></span>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-with-icon">
+                            <span class="input-icon"></span>
+                            <input type="password" name="password" id="loginPassword" placeholder="Password" required>
+                            <span class="password-toggle" onclick="toggleLoginPassword()"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group remember-forgot">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember_me">
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    
+                    <div class="form-message" id="loginMessage"></div>
+                    
+                    <button type="button" class="submit-btn login-btn" onclick="handleLogin()">SIGN IN</button>
+                </div>
+            </form>
+            
+            <!-- Registration Form -->
+            <form id="signupForm" class="auth-form registration-form" action="../send-mail.php" method="POST">
+                <div class="registration-grid">
+                    <div class="form-group">
+                        <label for="name">FULL NAME</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">ADDRESS</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="event_type">EVENT TYPE</label>
+                        <select id="event_type" name="event_type" required>
+                            <option value="">Select Event Type</option>
+                            <option value="pre-wedding">Pre-Wedding Photoshoot</option>
+                            <option value="engagement">Engagement Photography</option>
+                            <option value="wedding">Wedding Photography</option>
+                            <option value="reception">Reception Photography</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="event_date">EVENT DATE</label>
+                        <input type="date" id="event_date" name="event_date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="regPassword" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                    </div>
+                </div>
+                
+                <!-- Event Time Section -->
+                <div class="event-time-section">
+                    <label class="time-label">EVENT TIME</label>
+                    <div class="time-range-container">
+                        <div class="time-input-group">
+                            <input type="time" id="start_time" name="start_time" value="10:00" required>
+                            <span class="time-period">AM</span>
+                        </div>
+                        <span class="time-separator">to</span>
+                        <div class="time-input-group">
+                            <input type="time" id="end_time" name="end_time" value="14:00" required>
+                            <span class="time-period">PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group checkbox-group full-width">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="terms-link">Terms & Conditions</a>
+                    </label>
+                </div>
+                
+                <div class="form-message" id="signupMessage"></div>
+                
+                <button type="submit" class="submit-btn registration-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- About Us Section -->
+            <div class="footer-section">
+                <h3 class="footer-title">About Us</h3>
+                <p class="footer-text">
+                    If you own an iPhone, you've probably already worked out how 
+                    much fun it is to use it to watch movies; it has that
+                </p>
+            </div>
+            
+            <!-- Newsletter Section -->
+            <div class="footer-section">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-text">Stay update with our latest</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Email Address" class="newsletter-input" id="newsletterEmail" required>
+                    <button type="submit" class="newsletter-btn">
+                        <i class="arrow-icon">→</i>
+                    </button>
+                </form>
+                <div id="newsletterMessage" class="newsletter-message"></div>
+            </div>
+            
+            <!-- Follow Us Section -->
+            <div class="footer-section social-widget">
+                <h3 class="footer-title">Follow Us</h3>
+                <p class="footer-text">Let us be social</p>
+                <div class="footer-social d-flex align-items-center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p class="copyright">
+                Copyright ©2025 All rights reserved | This template is made with 
+                <span class="heart">♡</span> by <a href="#" class="colorlib-link">Colorlib</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>

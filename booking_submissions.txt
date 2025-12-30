@@ -1,0 +1,5 @@
+2025-12-24 06:17:10 - BOOKING #BK202512248271 submitted by: rohan (rohankumbhar2105@gmail.com, 9307919706) - Event: Wedding Photography on 2026-12-22 10:00-21:00 - IP: ::1 - SAVED TO DATABASE
+2025-12-24 07:39:30 - BOOKING #BK202512243241 submitted by: rohan (dhananjaykumbhar2105@gmail.com, 9307919706) - Event: Pre-Wedding Photoshoot on 2026-12-22 10:00-21:00 - IP: ::1 - SAVED TO DATABASE
+2025-12-26 07:49:10 - Registration & Booking created: rohan (rohankumbhar2105@gmail.com) - engagement on 2026-02-12
+{"timestamp":"2025-12-29 06:38:59","booking_id":"BOOK_695213f3ac0ea","name":"jay","email":"rohankumbhar2105@gmail.com","phone":"7756748322","event_type":"Anniversary","event_date":"2028-12-12","event_time":"00:12","location":"mohare","package":"Basic Photography Package","package_price":"15000","message":"","status":"pending"}
+2025-12-29 11:14:02 - Registration & Booking created: jay (rohankumbhar2105@gmail.com) - pre-wedding on 2028-12-12

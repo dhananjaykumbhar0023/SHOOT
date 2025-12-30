@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProShoot</title>
+    <link rel="stylesheet" href="shoot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="image/camera.jpg" alt="ProShoot Photography" onerror="this.style.display='none'">
+      <span>RohDip</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#contact-section">About</a></li>
+        <li><a href="components/book.html">Book</a></li>
+        <li><a href="#pricing">Pages</a></li>
+        <li><a href="components/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-container">
+    <nav class="mobile-nav">
+      <ul>
+        <li class="active"><a href="#" class="active">Home</a></li>
+        <li><a href="#contact-section">About</a></li>
+        <li><a href="components/book.html">Book</a></li>
+        <li><a href="#pricing">Pages</a></li>
+        <li><a href="components/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Enquiry Popup -->
+<div id="enquiryPopup" class="popup-overlay">
+  <div class="popup-container">
+    <div class="popup-header">
+      <h3>Enquiry Now</h3>
+      <button class="popup-close">&times;</button>
+    </div>
+    <div class="popup-content">
+      <form id="enquiryForm" class="enquiry-form" >
+        <div class="form-group">
+          <label for="enquiryName">Name</label>
+          <input type="text" id="enquiryName" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="enquiryEmail">Email</label>
+          <input type="email" id="enquiryEmail" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </form>
+      <div id="enquiryMessage" class="popup-message"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- BANNER SECTION -->
+<section class="banner-section">
+  <!-- Video Background -->
+  <div class="banner-video-bg">
+    <video autoplay muted loop playsinline class="banner-video">
+      <source src="image/pre2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="banner-video-overlay"></div>
+  </div>
+  
+  <div class="banner-container">
+    <div class="banner-content">
+      <div class="banner-text">  
+        <div class="banner-main">
+          <h1 class="banner-title">
+            IM<span class="highlight">A</span>GES<br>
+            MA<span class="highlight">T</span>TER
+          </h1>
+          <p class="banner-description">
+            Manner before lively wholly am no indeed expect one every marry his yet her. You mistress get dashwood children off manner to other
+          </p>
+          <button class="banner-btn">EXPLORE MORE</button>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS SECTION -->
+<section class="offers-section" id="offers">
+    <div class="offers-container">
+        <div class="section-header">
+            <span class="section-subtitle">Our Work</span>
+            <h2 class="section-title">Photo-shoot Offers</h2>
+        </div>
+        
+        <div class="offers-grid">
+            <!-- Pre-Wedding Card -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <div class="offer-icon">💑</div>
+                    <h3>Pre-Wedding Photoshoot</h3>
+                    <p class="offer-subtitle">Best for couples & save-the-date</p>
+                </div>
+                
+                <div class="offer-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">📷</span>
+                        <span>Photos: 150–200 edited photos</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎥</span>
+                        <span>Video: Cinematic highlight video (2–3 min)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⏱</span>
+                        <span>Duration: Half Day (4–5 hrs)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📍</span>
+                        <span>Location: 1–2 outdoor locations</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎨</span>
+                        <span>Editing: Premium color grading</span>
+                    </div>
+                </div>
+                
+                <div class="offer-pricing">
+                    <div class="original-price">Original Price: ₹25,000</div>
+                    <div class="offer-price">Offer Price: ₹14,999</div>
+                </div>
+                
+                <a href="components/book.html#booking" class="offer-btn">👉 Book Now</a>
+            </div>
+            
+            <!-- Engagement Card -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <div class="offer-icon">💍</div>
+                    <h3>Engagement Photography</h3>
+                    <p class="offer-subtitle">Capture your special moments</p>
+                </div>
+                
+                <div class="offer-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">📷</span>
+                        <span>Photos: 250+ edited photos</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎥</span>
+                        <span>Video: Full event coverage + highlights</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⏱</span>
+                        <span>Duration: Half / Full Day</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">👨‍💼</span>
+                        <span>Team: 1 Photographer + 1 Videographer</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎁</span>
+                        <span>Bonus: Instagram reels (2–3)</span>
+                    </div>
+                </div>
+                
+                <div class="offer-pricing">
+                    <div class="original-price">Original Price: ₹35,000</div>
+                    <div class="offer-price">Offer Price: ₹19,999</div>
+                </div>
+                
+                <a href="components/book.html#booking" class="offer-btn">👉 Book Now</a>
+            </div>
+            
+            <!-- Wedding Card -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <div class="offer-icon">👰🤵</div>
+                    <h3>Wedding Photography</h3>
+                    <p class="offer-subtitle">Complete wedding day coverage</p>
+                </div>
+                
+                <div class="offer-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">📷</span>
+                        <span>Photos: 600+ edited photos</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎥</span>
+                        <span>Video: Cinematic wedding film + full rituals</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⏱</span>
+                        <span>Duration: Full Day</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">👨‍💼</span>
+                        <span>Team: 2 Photographers + 2 Videographers</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📀</span>
+                        <span>Deliverables: Online gallery + pendrive</span>
+                    </div>
+                </div>
+                
+                <div class="offer-pricing">
+                    <div class="original-price">Original Price: ₹75,000</div>
+                    <div class="offer-price">Offer Price: ₹49,999</div>
+                </div>
+                
+                <a href="components/book.html#booking" class="offer-btn">👉 Book Now</a>
+            </div>
+            
+            <!-- Reception Card -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <div class="offer-icon">🎉</div>
+                    <h3>Reception Photography</h3>
+                    <p class="offer-subtitle">Elegant & candid moments</p>
+                </div>
+                
+                <div class="offer-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">📷</span>
+                        <span>Photos: 300+ edited photos</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎥</span>
+                        <span>Video: Highlight video (3–4 min)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⏱</span>
+                        <span>Duration: Evening event (4–6 hrs)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">👨‍💼</span>
+                        <span>Team: 1 Photographer + 1 Videographer</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎨</span>
+                        <span>Style: Candid + traditional mix</span>
+                    </div>
+                </div>
+                
+                <div class="offer-pricing">
+                    <div class="original-price">Original Price: ₹40,000</div>
+                    <div class="offer-price">Offer Price: ₹24,999</div>
+                </div>
+                
+                <a href="components/book.html#booking" class="offer-btn">👉 Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- PORTFOLIO SECTION -->
+<section class="portfolio-section">
+    <div class="portfolio-container">
+        <div class="section-header">
+            <span class="section-subtitle">Our Portfolio</span>
+            <h2 class="section-title">Check Our Work</h2>
+        </div>
+        
+        <!-- Portfolio Filter Menu -->
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="prewedding">Pre-Wedding</button>
+            <button class="filter-btn" data-filter="engagement">Engagement Shoot</button>
+            <button class="filter-btn" data-filter="wedding">Wedding Shoot</button>
+        </div>
+        
+        <div class="portfolio-grid">
+            <!-- Pre-Wedding Video 1 -->
+            <div class="portfolio-item" data-category="prewedding">
+                <div class="portfolio-video">
+                    <video 
+                        src="image/pre1.mp4" 
+                        muted 
+                        loop 
+                        preload="metadata">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Pre-Wedding</span>
+                            <h3 class="portfolio-title">Love Story - Part 1</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pre-Wedding Video 2 -->
+            <div class="portfolio-item" data-category="prewedding">
+                <div class="portfolio-video">
+                    <video 
+                        src="image/pre2.mp4" 
+                        muted 
+                        loop 
+                        preload="metadata">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Pre-Wedding</span>
+                            <h3 class="portfolio-title">Romantic Journey - Part 2</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pre-Wedding Video 3 -->
+            <div class="portfolio-item" data-category="prewedding">
+                <div class="portfolio-video">
+                    <video 
+                        src="image/pre3.mp4" 
+                        muted 
+                        loop 
+                        preload="metadata">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Pre-Wedding</span>
+                            <h3 class="portfolio-title">Sweet Moments - Part 3</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pre-Wedding Video 4 -->
+            <div class="portfolio-item" data-category="prewedding">
+                <div class="portfolio-video">
+                    <video 
+                        src="image/pre4.mp4" 
+                        muted 
+                        loop 
+                        preload="metadata">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Pre-Wedding</span>
+                            <h3 class="portfolio-title">Beautiful Memories - Part 4</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engagement Shoot 1 -->
+            <div class="portfolio-item" data-category="engagement">
+                <div class="portfolio-image">
+                    <img src="image/e1.webp" alt="Engagement Shoot">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Engagement</span>
+                            <h3 class="portfolio-title">Perfect Moment</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engagement Shoot 2 -->
+            <div class="portfolio-item" data-category="engagement">
+                <div class="portfolio-image">
+                    <img src="image/e2.webp" alt="Engagement Portrait">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Engagement</span>
+                            <h3 class="portfolio-title">Together Forever</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engagement Shoot 3 -->
+            <div class="portfolio-item" data-category="engagement">
+                <div class="portfolio-image">
+                    <img src="image/e3.avif" alt="Engagement Portrait">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Engagement</span>
+                            <h3 class="portfolio-title">Romantic Moments</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engagement Shoot 4 -->
+            <div class="portfolio-item" data-category="engagement">
+                <div class="portfolio-image">
+                    <img src="image/e4.webp" alt="Engagement Portrait">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Engagement</span>
+                            <h3 class="portfolio-title">Love Connection</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engagement Shoot 5 -->
+            <div class="portfolio-item" data-category="engagement">
+                <div class="portfolio-image">
+                    <img src="image/e5.jpg" alt="Engagement Session">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Engagement</span>
+                            <h3 class="portfolio-title">Sweet Embrace</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engagement Shoot 6 -->
+            <div class="portfolio-item" data-category="engagement">
+                <div class="portfolio-image">
+                    <img src="image/e6.jpg" alt="Engagement Couple">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Engagement</span>
+                            <h3 class="portfolio-title">Joyful Hearts</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engagement Shoot 7 -->
+            <div class="portfolio-item" data-category="engagement">
+                <div class="portfolio-image">
+                    <img src="image/e7.jpg" alt="Engagement Photography">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Engagement</span>
+                            <h3 class="portfolio-title">Eternal Bond</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engagement Shoot 8 -->
+            <div class="portfolio-item" data-category="engagement">
+                <div class="portfolio-image">
+                    <img src="image/e8.jpg" alt="Engagement Memories">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Engagement</span>
+                            <h3 class="portfolio-title">Precious Memories</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wedding Shoot 1 -->
+            <div class="portfolio-item" data-category="wedding">
+                <div class="portfolio-image">
+                    <img src="image/wedding1.jpg" alt="Wedding Ceremony">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Wedding</span>
+                            <h3 class="portfolio-title">Sacred Vows</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wedding Shoot 2 -->
+            <div class="portfolio-item" data-category="wedding">
+                <div class="portfolio-image">
+                    <img src="image/wedding2.webp" alt="Wedding Reception">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Wedding</span>
+                            <h3 class="portfolio-title">Celebration Joy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+            <!-- Wedding Shoot 3 -->
+            <div class="portfolio-item" data-category="wedding">
+                <div class="portfolio-image">
+                    <img src="image/wedding3.jpg" alt="Wedding Couple">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Wedding</span>
+                            <h3 class="portfolio-title">Perfect Union</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wedding Shoot 4 -->
+            <div class="portfolio-item" data-category="wedding">
+                <div class="portfolio-image">
+                    <img src="image/weddding4.webp" alt="Wedding Moments">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Wedding</span>
+                            <h3 class="portfolio-title">Precious Moments</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View More Button -->
+        <div class="portfolio-footer">
+            <button class="view-more-btn">VIEW MORE</button>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section class="pricing-section" id="pricing">
+  <div class="pricing-container">
+    
+    <div class="pricing-grid">
+      
+      <!-- Wedding Package -->
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Wedding</h3>
+          <p>Attend only first day</p>
+        </div>
+        
+        <div class="pricing-price">
+          <span class="currency">$</span>
+          <span class="amount">46.00</span>
+        </div>
+        
+        <div class="pricing-features">
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature unavailable">
+            <span class="cross">✗</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature unavailable">
+            <span class="cross">✗</span>
+            <span>Unlimited Entrance</span>
+          </div>
+        </div>
+        
+        <a href="components/book.html#booking" class="pricing-btn">BOOK NOW</a>
+      </div>
+      
+      <!-- Studio Package -->
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Studio</h3>
+          <p>Attend only first day</p>
+        </div>
+        
+        <div class="pricing-price">
+          <span class="currency">$</span>
+          <span class="amount">76.00</span>
+        </div>
+        
+        <div class="pricing-features">
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature unavailable">
+            <span class="cross">✗</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature unavailable">
+            <span class="cross">✗</span>
+            <span>Unlimited Entrance</span>
+          </div>
+        </div>
+        
+        <a href="components/book.html#booking" class="pricing-btn">BOOK NOW</a>
+      </div>
+      
+      <!-- Fashion Package -->
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Fashion</h3>
+          <p>Attend only first day</p>
+        </div>
+        
+        <div class="pricing-price">
+          <span class="currency">$</span>
+          <span class="amount">96.00</span>
+        </div>
+        
+        <div class="pricing-features">
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature unavailable">
+            <span class="cross">✗</span>
+            <span>Unlimited Entrance</span>
+          </div>
+          <div class="feature unavailable">
+            <span class="cross">✗</span>
+            <span>Unlimited Entrance</span>
+          </div>
+        </div>
+        
+        <a href="components/book.html#booking" class="pricing-btn">BOOK NOW</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">🏠</div>
+        <div class="contact-details">
+          <h3>Mohare,Panhala</h3>
+          <p>Satave savarde Road</p>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-details">
+          <h3>9307919706</h3>
+          <p>Mon to Fri 9am to 6 pm</p>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-details">
+          <h3>rohdip@colorlib.com</h3>
+          <p>Send us your query anytime!</p>
+        </div>
+      </div>
+    </div>
+    <!--right side form-->
+    <div class="contact-form">
+      <form id="contactForm" action="submit.php" method="POST"> 
+        <div class="form-row">
+          <input type="text" name="full_name" placeholder="Enter your name" required>
+          <input type="email" name="email" placeholder="Enter email address" required>
+        </div>
+        
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Enter phone number" required>
+          <input type="text" name="subject" placeholder="Enter your subject" required>
+        </div>
+        
+        <textarea name="message" placeholder="Message" rows="6" required></textarea>
+        
+        <button type="submit" name="send" class="send-btn">SEND MESSAGE</button>
+      </form>
+      
+      <div id="alertMessage" class="form-message"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- About Us Section -->
+            <div class="footer-section">
+                <h3 class="footer-title">About Us</h3>
+                <p class="footer-text">
+                    If you own an iPhone, you've probably already worked out how 
+                    much fun it is to use it to watch movies; it has that
+                </p>
+            </div>
+            
+            <!-- Newsletter Section -->
+            <div class="footer-section">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-text">Stay update with our latest</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Email Address" class="newsletter-input" id="newsletterEmail" required>
+                    <button type="submit" class="newsletter-btn">
+                        <i class="arrow-icon">→</i>
+                    </button>
+                </form>
+                <div id="newsletterMessage" class="newsletter-message"></div>
+            </div>
+            
+            <!-- Follow Us Section -->
+            <div class="footer-section social-widget">
+                <h3 class="footer-title">Follow Us</h3>
+                <p class="footer-text">Let us be social</p>
+                <div class="footer-social d-flex align-items-center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p class="copyright">
+                Copyright ©2025 All rights reserved | This template is made with 
+                <span class="heart">♡</span> by <a href="#" class="colorlib-link">Colorlib</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- THANK YOU SECTION -->
+<section class="thankyou-section" id="thankYouPage">
+    <div class="thankyou-container">
+        <div class="thankyou-box">
+            <button class="thankyou-close" onclick="goBackHome()">&times;</button>
+            <div class="thankyou-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h1>Thank You!</h1>
+            <p>Your submission has been received successfully. We appreciate your interest in RohDip Photography and will get back to you within 24 hours.</p>
+            
+            <div class="thankyou-btn-container">
+                <button onclick="goBackHome()" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Go Back Home
+                </button>
+                <button onclick="goToServices()" class="btn btn-secondary">
+                    <i class="fas fa-camera"></i> View Services
+                </button>
+            </div>
+            
+            <div class="thankyou-contact-info">
+                <h3>Need Immediate Assistance?</h3>
+                <div class="thankyou-contact-details">
+                    <div class="thankyou-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>9307919706</span>
+                    </div>
+                    <div class="thankyou-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>rohdip@colorlib.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Booking - Capture Your Special Moments</title>
+  <link rel="stylesheet" href="book.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="hero-background">
+    <!-- Video Background -->
+    <div class="hero-video-bg">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="../image/pre2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+  </div>
+  
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        <span class="title-line">Capture Your</span>
+        <span class="title-line highlight">Perfect Moments</span>
+      </h1>
+      <p class="hero-subtitle">Professional wedding and event photography that tells your unique story</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="scrollToBooking()">
+          <i class="fas fa-calendar-plus"></i>
+          Book Your Session
+        </button>
+        <button class="btn-secondary" onclick="scrollToPortfolio()">
+          <i class="fas fa-images"></i>
+          View Portfolio
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Enhanced Booking Form Section -->
+<section id="booking" class="booking-section">
+  <div class="container">
+    <div class="booking-container">
+      <div class="booking-header">
+        <h2 class="booking-title">Book Your Photography Session</h2>
+        <p class="booking-subtitle">Let's create beautiful memories together</p>
+        
+        <!-- Enhanced Step Indicator -->
+        <div class="step-progress">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <div class="step-indicators">
+            <div class="step-indicator active" data-step="0">
+              <div class="step-circle">
+                <i class="fas fa-user"></i>
+              </div>
+              <span class="step-label">Personal Info</span>
+            </div>
+            <div class="step-indicator" data-step="1">
+              <div class="step-circle">
+                <i class="fas fa-calendar"></i>
+              </div>
+              <span class="step-label">Event Details</span>
+            </div>
+            <div class="step-indicator" data-step="2">
+              <div class="step-circle">
+                <i class="fas fa-box"></i>
+              </div>
+              <span class="step-label">Package</span>
+            </div>
+            <div class="step-indicator" data-step="3">
+              <div class="step-circle">
+                <i class="fas fa-check"></i>
+              </div>
+              <span class="step-label">Confirm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form id="bookingForm" action="../send-mail.php" method="POST" class="booking-form">
+
+        <!-- Step 1: Personal Details -->
+        <div class="form-step active">
+          <div class="step-content">
+            <h3 class="step-title">
+              <i class="fas fa-user-circle"></i>
+              Tell Us About Yourself
+            </h3>
+            
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">
+                  <i class="fas fa-user"></i>
+                  Full Name
+                </label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+                <div class="input-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  <i class="fas fa-envelope"></i>
+                  Email Address
+                </label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                <div class="input-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">
+                  <i class="fas fa-phone"></i>
+                  Phone Number
+                </label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+                <div class="input-feedback"></div>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn-next" onclick="nextStep()">
+                <span>Continue</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Event Details -->
+        <div class="form-step">
+          <div class="step-content">
+            <h3 class="step-title">
+              <i class="fas fa-calendar-alt"></i>
+              Event Information
+            </h3>
+            
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="event_type" class="form-label">
+                  <i class="fas fa-heart"></i>
+                  Event Type
+                </label>
+                <div class="custom-select">
+                  <select id="event_type" name="event_type" class="form-select" required onchange="updateEventImages(this.value)">
+                    <option value="">Choose your event type</option>
+                    <option value="Pre-Wedding" data-icon="🌹">🌹 Pre-Wedding Shoot</option>
+                    <option value="Engagement" data-icon="💍">💍 Engagement Ceremony</option>
+                    <option value="Wedding" data-icon="👰">👰 Wedding Ceremony</option>
+                    <option value="Reception" data-icon="🎉">🎉 Reception Party</option>
+                    <option value="Anniversary" data-icon="💕">💕 Anniversary Celebration</option>
+                    <option value="Birthday" data-icon="🎂">🎂 Birthday Party</option>
+                    <option value="Corporate" data-icon="🏢">🏢 Corporate Event</option>
+                  </select>
+                  <div class="select-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+                <div class="input-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="event_date" class="form-label">
+                  <i class="fas fa-calendar-day"></i>
+                  Event Date
+                </label>
+                <input type="date" id="event_date" name="event_date" class="form-input" required>
+                <div class="input-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="event_time" class="form-label">
+                  <i class="fas fa-clock"></i>
+                  Event Time
+                </label>
+                <input type="time" id="event_time" name="event_time" class="form-input" required>
+                <div class="input-feedback"></div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="location" class="form-label">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Event Location
+                </label>
+                <input type="text" id="location" name="location" class="form-input" placeholder="Enter the venue or location" required>
+                <div class="input-feedback"></div>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn-back" onclick="prevStep()">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+              </button>
+              <button type="button" class="btn-next" onclick="nextStep()">
+                <span>Continue</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Package Selection -->
+        <div class="form-step">
+          <div class="step-content">
+            <h3 class="step-title">
+              <i class="fas fa-gift"></i>
+              Choose Your Package
+            </h3>
+            
+            <div class="packages-grid">
+              <div class="package-card" data-package="Basic" data-price="15000" onclick="selectPackage('Basic Photography Package', 15000)">
+                <div class="package-ribbon">
+                  <span>Starter</span>
+                </div>
+                <div class="package-icon">
+                  <i class="fas fa-camera"></i>
+                </div>
+                <h4 class="package-name">Basic Package</h4>
+                <div class="package-price">
+                  <span class="currency">₹</span>
+                  <span class="amount">15,000</span>
+                </div>
+                <ul class="package-features">
+                  <li><i class="fas fa-check"></i> 4-6 Hours Coverage</li>
+                  <li><i class="fas fa-check"></i> 200+ Edited Photos</li>
+                  <li><i class="fas fa-check"></i> Online Gallery</li>
+                  <li><i class="fas fa-check"></i> USB Drive</li>
+                  <li><i class="fas fa-check"></i> Basic Editing</li>
+                </ul>
+                <div class="package-select">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Select Package</span>
+                </div>
+              </div>
+
+              <div class="package-card popular" data-package="Premium" data-price="25000" onclick="selectPackage('Premium Photo + Video Package', 25000)">
+                <div class="package-ribbon popular-ribbon">
+                  <span>Most Popular</span>
+                </div>
+                <div class="package-icon">
+                  <i class="fas fa-video"></i>
+                </div>
+                <h4 class="package-name">Premium Package</h4>
+                <div class="package-price">
+                  <span class="currency">₹</span>
+                  <span class="amount">25,000</span>
+                </div>
+                <ul class="package-features">
+                  <li><i class="fas fa-check"></i> 6-8 Hours Coverage</li>
+                  <li><i class="fas fa-check"></i> 300+ Edited Photos</li>
+                  <li><i class="fas fa-check"></i> Highlight Video (3-5 min)</li>
+                  <li><i class="fas fa-check"></i> Online Gallery</li>
+                  <li><i class="fas fa-check"></i> USB Drive + DVD</li>
+                  <li><i class="fas fa-check"></i> Advanced Editing</li>
+                </ul>
+                <div class="package-select">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Select Package</span>
+                </div>
+              </div>
+
+              <div class="package-card" data-package="Luxury" data-price="40000" onclick="selectPackage('Luxury Full Coverage Package', 40000)">
+                <div class="package-ribbon">
+                  <span>Premium</span>
+                </div>
+                <div class="package-icon">
+                  <i class="fas fa-crown"></i>
+                </div>
+                <h4 class="package-name">Luxury Package</h4>
+                <div class="package-price">
+                  <span class="currency">₹</span>
+                  <span class="amount">40,000</span>
+                </div>
+                <ul class="package-features">
+                  <li><i class="fas fa-check"></i> 10-12 Hours Coverage</li>
+                  <li><i class="fas fa-check"></i> 500+ Edited Photos</li>
+                  <li><i class="fas fa-check"></i> Full Event Video</li>
+                  <li><i class="fas fa-check"></i> Drone Shots</li>
+                  <li><i class="fas fa-check"></i> Premium Album</li>
+                  <li><i class="fas fa-check"></i> Same Day Highlights</li>
+                </ul>
+                <div class="package-select">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Select Package</span>
+                </div>
+              </div>
+            </div>
+
+            <input type="hidden" name="package" id="selectedPackage" required>
+            <input type="hidden" name="package_price" id="selectedPrice">
+
+            <div class="step-actions">
+              <button type="button" class="btn-back" onclick="prevStep()">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+              </button>
+              <button type="button" class="btn-next" onclick="nextStep()">
+                <span>Continue</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Final Details & Confirmation -->
+        <div class="form-step">
+          <div class="step-content">
+            <h3 class="step-title">
+              <i class="fas fa-clipboard-check"></i>
+              Final Details & Confirmation
+            </h3>
+            
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="message" class="form-label">
+                  <i class="fas fa-comment-alt"></i>
+                  Special Requirements (Optional)
+                </label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about any special requirements, themes, or specific shots you'd like..."></textarea>
+              </div>
+            </div>
+
+            <!-- Enhanced Booking Summary -->
+            <div class="booking-summary">
+              <h4 class="summary-title">
+                <i class="fas fa-receipt"></i>
+                Booking Summary
+              </h4>
+              <div class="summary-content">
+                <div class="summary-section">
+                  <h5>Personal Information</h5>
+                  <div class="summary-item">
+                    <span class="summary-label">Name:</span>
+                    <span class="summary-value" id="summary-name">-</span>
+                  </div>
+                  <div class="summary-item">
+                    <span class="summary-label">Email:</span>
+                    <span class="summary-value" id="summary-email">-</span>
+                  </div>
+                  <div class="summary-item">
+                    <span class="summary-label">Phone:</span>
+                    <span class="summary-value" id="summary-phone">-</span>
+                  </div>
+                </div>
+
+                <div class="summary-section">
+                  <h5>Event Details</h5>
+                  <div class="summary-item">
+                    <span class="summary-label">Event Type:</span>
+                    <span class="summary-value" id="summary-event">-</span>
+                  </div>
+                  <div class="summary-item">
+                    <span class="summary-label">Date & Time:</span>
+                    <span class="summary-value" id="summary-datetime">-</span>
+                  </div>
+                  <div class="summary-item">
+                    <span class="summary-label">Location:</span>
+                    <span class="summary-value" id="summary-location">-</span>
+                  </div>
+                </div>
+
+                <div class="summary-section">
+                  <h5>Package & Pricing</h5>
+                  <div class="summary-item">
+                    <span class="summary-label">Selected Package:</span>
+                    <span class="summary-value" id="summary-package">-</span>
+                  </div>
+                  <div class="summary-item total-price">
+                    <span class="summary-label">Total Amount:</span>
+                    <span class="summary-value" id="summary-price">₹0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn-back" onclick="prevStep()">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+              </button>
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                <span>Confirm Booking</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Enhanced Success Modal -->
+<div id="successModal" class="success-modal">
+  <div class="modal-backdrop"></div>
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="success-animation">
+        <div class="checkmark-circle">
+          <div class="checkmark"></div>
+        </div>
+      </div>
+      <h3 class="modal-title">🎉 Booking Confirmed!</h3>
+      <p class="modal-message">
+        Thank you for choosing our photography services! We've received your booking request and will contact you within 24 hours to discuss the details and finalize your session.
+      </p>
+      <div class="modal-details">
+        <div class="detail-item">
+          <i class="fas fa-envelope"></i>
+          <span>Confirmation email sent to your inbox</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-phone"></i>
+          <span>We'll call you within 24 hours</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-calendar-check"></i>
+          <span>Your date is now reserved</span>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-close-modal" onclick="closeSuccessModal()">
+          <i class="fas fa-check"></i>
+          <span>Got it, Thanks!</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" class="loading-overlay">
+  <div class="loading-spinner">
+    <div class="spinner"></div>
+    <p>Processing your booking...</p>
+  </div>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>

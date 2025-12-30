@@ -1,0 +1,14 @@
+[
+    {
+        "id": "test123",
+        "fullName": "John Doe",
+        "email": "john@example.com",
+        "phone": "9876543210",
+        "address": "123 Main Street, City, State",
+        "eventDate": "2025-02-15",
+        "eventTime": "14:00",
+        "password": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+        "registeredAt": "2024-12-20 10:30:00",
+        "ipAddress": "127.0.0.1"
+    }
+]
